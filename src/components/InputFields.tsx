@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-// import { FormData } from "./App";
 
 const InputFieldStyle = styled.div`
   input {
@@ -40,9 +39,9 @@ const InputFields = (props: InputFieldsProps) => {
       nrCharts: parseInt(nrCharts),
       dataPoints: parseInt(dataPoints),
     });
+
     setnrCharts("");
     setdataPoints("");
-
     event.preventDefault();
   };
 

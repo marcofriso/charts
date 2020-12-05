@@ -5,14 +5,10 @@ import Charts from "./Charts";
 import Sega from "./SEGA.woff";
 
 const AppStyle = styled.div`
-  .App {
-    height: 100vh;
-    background: no-repeat center center fixed cover;
-    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-  }
+  text-align: center;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 
   @font-face {
     font-family: "SEGA LOGO FONT";
@@ -45,7 +41,6 @@ const setChartsData = (data: any) => {
     }
     chartsData.push(chartData);
   }
-  console.log("CDD", chartsData);
 
   return chartsData;
 };
@@ -56,19 +51,18 @@ const App = () => {
 
   if (formData) {
     chartsData = setChartsData(formData);
+
     console.log("SET_APP_DATA", chartsData);
   }
 
   return (
     <React.Fragment>
       <AppStyle>
-        <div className="App">
-          <header>
-            <h1>Charts Generator</h1>
-          </header>
-          <InputFields declareFormData={setFormData} />
-          {chartsData && <Charts chartsData={chartsData} />}
-        </div>
+        <header>
+          <h1>Charts Generator</h1>
+        </header>
+        <InputFields declareFormData={setFormData} />
+        {chartsData && <Charts chartsData={chartsData} />}
       </AppStyle>
     </React.Fragment>
   );
