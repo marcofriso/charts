@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+// import { FormData } from "./App";
 
 const InputFieldStyle = styled.div`
   input {
@@ -26,18 +27,16 @@ const InputFieldStyle = styled.div`
   }
 `;
 
-interface FormData {
-  nrCharts: number;
-  dataPoints: number;
-}
+type InputFieldsProps = {
+  declareFormData: any;
+};
 
-const InputFields = () => {
+const InputFields = (props: InputFieldsProps) => {
   const [nrCharts, setnrCharts] = useState<string>("");
   const [dataPoints, setdataPoints] = useState<string>("");
-  const [formData, setFormData] = useState<FormData>();
 
   const handleSubmit = (event: React.SyntheticEvent): void => {
-    setFormData({
+    props.declareFormData({
       nrCharts: parseInt(nrCharts),
       dataPoints: parseInt(dataPoints),
     });
@@ -55,7 +54,9 @@ const InputFields = () => {
           id="nr-charts"
           name="nr-charts"
           placeholder="Insert number of charts"
+          min="1"
           max="10"
+          required
           onChange={(e) => setnrCharts(e.target.value)}
           value={nrCharts}
         ></input>
@@ -63,13 +64,14 @@ const InputFields = () => {
           type="number"
           id="nr-data-points"
           placeholder="Insert number of data points"
+          min="1"
           max="200"
+          required
           value={dataPoints}
           onChange={(e) => setdataPoints(e.target.value)}
         ></input>
         <button type="submit">Generate Charts</button>
       </form>
-      {console.log("FD", formData)}
     </InputFieldStyle>
   );
 };
