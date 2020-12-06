@@ -21,11 +21,23 @@ code {
   src: local("SEGA LOGO FONT"), url(SEGA.woff) format("woff");
 }
 
+@media screen and (max-width: 799px) {
+  h1 {
+    font-size: 3em;
+    line-height: 1.6;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4em;
+  }
+}
+
 h1 {
   font-family: "SEGA LOGO FONT";
   margin-top: 10vh;
   font-weight: 200;
   color: rgb(4, 68, 245);
-  font-size: 4em;
   text-align: center;
 }
