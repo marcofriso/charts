@@ -35,7 +35,7 @@ Please provide us with:
 
  ## Instruction
 
- The project is running here:
+ The project is running [here](https://marcofriso.github.io/charts);
 
  - Install: `npm i`
  - Run `npm run start`
