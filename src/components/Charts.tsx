@@ -10,7 +10,7 @@ const LineStyle = styled.div`
 `;
 
 const ChartsStyle = styled.div`
-  margin-top: 20px;
+  margin: 20px 10px 0 10px;
 `;
 
 const setData = (chartData: Array<number>, labels: Array<number>) => ({
