@@ -10,12 +10,12 @@ const AppStyle = styled.div`
   flex-direction: column;
 `;
 
-export interface FormData {
+interface FormData {
   nrCharts: number;
   dataPoints: number;
 }
 
-const setChartsData = (data: any) => {
+const setChartsData = (data: FormData) => {
   let chartsData = [];
 
   for (let i = 0; i < data.nrCharts; i++) {

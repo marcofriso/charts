@@ -13,6 +13,16 @@ const ChartsStyle = styled.div`
   margin: 20px 10px 0 10px;
 `;
 
+interface PropsCharts {
+  chartsData: Array<Array<number>>;
+}
+
+interface LineChartProps {
+  name: string;
+  chartData: Array<number>;
+  labels: Array<number>;
+}
+
 const setData = (chartData: Array<number>, labels: Array<number>) => ({
   labels,
   datasets: [
@@ -48,7 +58,7 @@ const setOptions = (name: string) => ({
   },
 });
 
-const LineChart = ({ name, chartData, labels }: any) => (
+const LineChart = ({ name, chartData, labels }: LineChartProps) => (
   <>
     <LineStyle>
       <Line data={setData(chartData, labels)} options={setOptions(name)} />
@@ -56,7 +66,7 @@ const LineChart = ({ name, chartData, labels }: any) => (
   </>
 );
 
-const Charts = (props: any) => {
+const Charts = (props: PropsCharts) => {
   const len = props.chartsData[0].length;
   const labels = [...Array(len).keys()].map((x) => x + 1);
 
