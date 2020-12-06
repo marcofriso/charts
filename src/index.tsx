@@ -6,6 +6,9 @@ import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
+    <header>
+      <h1>Charts Generator</h1>
+    </header>
     <App />
   </React.StrictMode>,
   document.getElementById("root")
