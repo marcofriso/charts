@@ -20,15 +20,15 @@ Please provide us with:
 
 ## Details
 
-- [ ] install React, TS, Styled Components
-- [ ] 2 input fields 
+- [x] install React, TS, Styled Components
+- [x] 2 input fields 
   - [ ] centered in the middle of the page both vertically and horizontally.
-  - [ ] First field will control number of charts, 
-  - [ ] second field will control number of points in the chart. 
-- [ ] After inputting any number in the first field, 
-  - [ ] same number of charts will appear 40px below the input fields 
-  - [ ] with 20px gap between each other. 
-- [ ] After inputting any number in the second field 
-  - [ ] line will be drawn in each chart created from the inputted number of randomly generated data points. 
+  - [x] First field will control number of charts, 
+  - [x] second field will control number of points in the chart. 
+- [x] After inputting any number in the first field, 
+  - [x] same number of charts will appear 40px below the input fields 
+  - [x] with 20px gap between each other. 
+- [x] After inputting any number in the second field 
+  - [x] line will be drawn in each chart created from the inputted number of randomly generated data points. 
     - For example value of first input = 3, value of second input = 10000 will create 3 charts, each with 1 line consisting of 10000 randomly generated values.
-- Only relevant characters should be allowed in the input fields.
+ - [x] Only relevant characters should be allowed in the input fields.
