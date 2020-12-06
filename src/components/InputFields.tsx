@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const InputFieldStyle = styled.div`
+  margin-top: 22vh;
+
   input {
     padding: 15px;
     width: 270px;
@@ -22,7 +24,6 @@ const InputFieldStyle = styled.div`
     display: inline-block;
     text-decoration: none;
     cursor: pointer;
-    margin-top: 22vh;
   }
 `;
 

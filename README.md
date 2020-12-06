@@ -22,7 +22,7 @@ Please provide us with:
 
 - [x] install React, TS, Styled Components
 - [x] 2 input fields 
-  - [ ] centered in the middle of the page both vertically and horizontally.
+  - [x] centered in the middle of the page both vertically and horizontally.
   - [x] First field will control number of charts, 
   - [x] second field will control number of points in the chart. 
 - [x] After inputting any number in the first field, 
@@ -32,3 +32,10 @@ Please provide us with:
   - [x] line will be drawn in each chart created from the inputted number of randomly generated data points. 
     - For example value of first input = 3, value of second input = 10000 will create 3 charts, each with 1 line consisting of 10000 randomly generated values.
  - [x] Only relevant characters should be allowed in the input fields.
+
+ ## Instruction
+
+ The project is running here:
+
+ - Install: `npm i`
+ - Run `npm run start`
