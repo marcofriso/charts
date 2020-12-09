@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import styled from "styled-components";
 
 const InputFieldStyle = styled.div`
-  transform: translatey(-50%);
   text-align: center;
+
+  @media screen and (min-width: 800px) {
+    transform: translatey(-50%);
+  }
 
   input {
     padding: 15px;
