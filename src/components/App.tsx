@@ -4,10 +4,21 @@ import InputFields from "./InputFields";
 import Charts from "./Charts";
 
 const AppStyle = styled.div`
-  text-align: center;
+  width: 100%;
+  height: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   display: flex;
-  height: 100%;
-  flex-direction: column;
+  flex-flow: column;
+
+  .bottom {
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    position: relative;
+    overflow: visible;
+  }
 `;
 
 interface FormData {
@@ -43,7 +54,9 @@ const App = () => {
     <React.Fragment>
       <AppStyle>
         <InputFields declareFormData={setFormData} />
-        {chartsData && <Charts chartsData={chartsData} />}
+        <div className="bottom">
+          {chartsData && <Charts chartsData={chartsData} />}
+        </div>
       </AppStyle>
     </React.Fragment>
   );

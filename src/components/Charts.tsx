@@ -10,7 +10,8 @@ const LineStyle = styled.div`
 `;
 
 const ChartsStyle = styled.div`
-  margin: 20px 10px 0 10px;
+  margin-top: -11.5px;
+  padding-bottom: 10px;
 `;
 
 interface PropsCharts {
