@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/charts/static/css/main.ea0f534a.chunk.css",
-    "main.js": "/charts/static/js/main.8e5de958.chunk.js",
-    "main.js.map": "/charts/static/js/main.8e5de958.chunk.js.map",
+    "main.css": "/charts/static/css/main.e2af4d2a.chunk.css",
+    "main.js": "/charts/static/js/main.38a5ec64.chunk.js",
+    "main.js.map": "/charts/static/js/main.38a5ec64.chunk.js.map",
     "runtime-main.js": "/charts/static/js/runtime-main.8bd312ff.js",
     "runtime-main.js.map": "/charts/static/js/runtime-main.8bd312ff.js.map",
     "static/js/2.e02d8c99.chunk.js": "/charts/static/js/2.e02d8c99.chunk.js",
@@ -10,14 +10,14 @@
     "static/js/3.06f2beec.chunk.js": "/charts/static/js/3.06f2beec.chunk.js",
     "static/js/3.06f2beec.chunk.js.map": "/charts/static/js/3.06f2beec.chunk.js.map",
     "index.html": "/charts/index.html",
-    "static/css/main.ea0f534a.chunk.css.map": "/charts/static/css/main.ea0f534a.chunk.css.map",
+    "static/css/main.e2af4d2a.chunk.css.map": "/charts/static/css/main.e2af4d2a.chunk.css.map",
     "static/js/2.e02d8c99.chunk.js.LICENSE.txt": "/charts/static/js/2.e02d8c99.chunk.js.LICENSE.txt",
     "static/media/index.css": "/charts/static/media/SEGA.47b4bfa9.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.8bd312ff.js",
     "static/js/2.e02d8c99.chunk.js",
-    "static/css/main.ea0f534a.chunk.css",
-    "static/js/main.8e5de958.chunk.js"
+    "static/css/main.e2af4d2a.chunk.css",
+    "static/js/main.38a5ec64.chunk.js"
   ]
 }
