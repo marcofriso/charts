@@ -10,7 +10,7 @@ const LineStyle = styled.div`
 `;
 
 const ChartsStyle = styled.div`
-  margin-top: -11.5px;
+  margin: -11.5px 10px 0 10px;
   padding-bottom: 10px;
 `;
 
