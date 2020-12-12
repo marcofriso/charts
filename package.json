@@ -30,10 +30,17 @@
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
-    "extends": ["react-app", "react-app/jest"]
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
-    "production": [">0.2%", "not dead", "not op_mini all"],
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
@@ -42,6 +49,7 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.4",
-    "gh-pages": "^3.1.0"
+    "gh-pages": "^3.1.0",
+    "react-refresh": "^0.9.0"
   }
 }
